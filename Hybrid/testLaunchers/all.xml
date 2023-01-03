@@ -1,0 +1,5 @@
+<suite name="all suites">
+    <suite-files>
+        <suite-file path="./Auto.xml" />
+    </suite-files>
+</suite>

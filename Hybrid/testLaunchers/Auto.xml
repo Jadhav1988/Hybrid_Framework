@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Test suite Name" verbose="1">
+	<listeners>
+		<listener class-name="com.org.Report.ExtentReportListner" />
+	</listeners>
+
+	<test name="com.org.home.Links">
+		<classes>
+			<class name="com.org.home.Links" />
+		</classes>
+	</test>
+
+</suite>

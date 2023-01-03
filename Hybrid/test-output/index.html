@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Test_suite_Name">
+              <span class="suite-name border-failed">Test suite Name</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Test_suite_Name">
+                    <span>E:\Test\Hybrid\testLaunchers\Auto.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Test_suite_Name">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Test_suite_Name">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Test_suite_Name">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Test_suite_Name">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Test_suite_Name">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Test_suite_Name">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Test_suite_Name" class="hide-methods failed suite-Test_suite_Name"> (hide)</a> <!-- hide-methods failed suite-Test_suite_Name -->
+                      <a href="#" panel-name="suite-Test_suite_Name" class="show-methods failed suite-Test_suite_Name"> (show)</a> <!-- show-methods failed suite-Test_suite_Name -->
+                    </span>
+                    <div class="method-list-content failed suite-Test_suite_Name">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite_Name" title="com.org.home.Links" hash-for-method="Application_Login">Application_Login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Test_suite_Name -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Test_suite_Name" class="hide-methods passed suite-Test_suite_Name"> (hide)</a> <!-- hide-methods passed suite-Test_suite_Name -->
+                      <a href="#" panel-name="suite-Test_suite_Name" class="show-methods passed suite-Test_suite_Name"> (show)</a> <!-- show-methods passed suite-Test_suite_Name -->
+                    </span>
+                    <div class="method-list-content passed suite-Test_suite_Name">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite_Name" title="com.org.home.Links" hash-for-method="Add_An_Item_To_Cart">Add_An_Item_To_Cart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite_Name" title="com.org.home.Links" hash-for-method="Save_For_Later_Option">Save_For_Later_Option</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite_Name" title="com.org.home.Links" hash-for-method="Test_Kids_Wear_Page">Test_Kids_Wear_Page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite_Name" title="com.org.home.Links" hash-for-method="Test_Mens_Wear_Page">Test_Mens_Wear_Page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_suite_Name" title="com.org.home.Links" hash-for-method="Test_Womens_Wear_Page">Test_Womens_Wear_Page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Test_suite_Name -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Test_suite_Name" class="panel Test_suite_Name">
+          <div class="suite-Test_suite_Name-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.org.home.Links</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Application_Login">
+                  </a> <!-- Application_Login -->
+                  <span class="method-name">Application_Login</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//span[@data-property=&apos;ACT_HEY_USER&apos;])[1] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.org.CoreUtils.CommonUserActions.waitForVisibilityOfElement(CommonUserActions.java:557)
+	at com.org.pages.Home.loginToApp(Home.java:46)
+	at com.org.home.Links.Application_Login(Links.java:19)
+	at java.util.ArrayList.forEach(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//span[@data-property=&apos;ACT_HEY_USER&apos;])[1]&quot;}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SUNIL&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\sunil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57599}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e0addd8a4f7af94eeee171f0a2f373f1
+*** Element info: {Using=xpath, value=(//span[@data-property=&apos;ACT_HEY_USER&apos;])[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.org.driver.BaseWebDriver.findElement(BaseWebDriver.java:72)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 31 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Log into the application)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_suite_Name-class-failed -->
+          <div class="suite-Test_suite_Name-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.org.home.Links</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Add_An_Item_To_Cart">
+                  </a> <!-- Add_An_Item_To_Cart -->
+                  <span class="method-name">Add_An_Item_To_Cart</span>
+                  <em>
+(add an itesm to the cart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Save_For_Later_Option">
+                  </a> <!-- Save_For_Later_Option -->
+                  <span class="method-name">Save_For_Later_Option</span>
+                  <em>
+(Test “Save for Later” option )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_Kids_Wear_Page">
+                  </a> <!-- Test_Kids_Wear_Page -->
+                  <span class="method-name">Test_Kids_Wear_Page</span>
+                  <em>
+(Verify Kids Wear Page Navigation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_Mens_Wear_Page">
+                  </a> <!-- Test_Mens_Wear_Page -->
+                  <span class="method-name">Test_Mens_Wear_Page</span>
+                  <em>
+(Verify Mens Wear Page Navigation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test_Womens_Wear_Page">
+                  </a> <!-- Test_Womens_Wear_Page -->
+                  <span class="method-name">Test_Womens_Wear_Page</span>
+                  <em>
+(Verify Womens Wear Page Navigation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_suite_Name-class-passed -->
+        </div> <!-- panel Test_suite_Name -->
+        <div panel-name="test-xml-Test_suite_Name" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\Test\Hybrid\testLaunchers\Auto.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Test suite Name&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.org.Report.ExtentReportListner&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;com.org.home.Links&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.org.home.Links&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- com.org.home.Links --&gt;
+&lt;/suite&gt; &lt;!-- Test suite Name --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Test_suite_Name" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Test suite Name</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">com.org.home.Links (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Test_suite_Name" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Test suite Name</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Test_suite_Name" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Test suite Name</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Test_suite_Name');
+function tableData_Test_suite_Name() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Application_Login')
+data.setCell(0, 2, 'com.org.home.Links')
+data.setCell(0, 3, 70545);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Add_An_Item_To_Cart')
+data.setCell(1, 2, 'com.org.home.Links')
+data.setCell(1, 3, 31909);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Save_For_Later_Option')
+data.setCell(2, 2, 'com.org.home.Links')
+data.setCell(2, 3, 24090);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Test_Kids_Wear_Page')
+data.setCell(3, 2, 'com.org.home.Links')
+data.setCell(3, 3, 8622);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Test_Mens_Wear_Page')
+data.setCell(4, 2, 'com.org.home.Links')
+data.setCell(4, 3, 7496);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Test_Womens_Wear_Page')
+data.setCell(5, 2, 'com.org.home.Links')
+data.setCell(5, 3, 6440);
+window.suiteTableData['Test_suite_Name']= { tableData: data, tableDiv: 'times-div-Test_suite_Name'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Test_suite_Name">
+              </div> <!-- times-div-Test_suite_Name -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Test_suite_Name" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Test suite Name</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Test_suite_Name" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Test_suite_Name" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.org.home.Links</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void com.org.home.Links.Application_Login())</span>
+                <span class="method-start">7250 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Application_Login</span>
+                <span class="method-start">7255 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">failureCatcher([TestResult name=Application_Login status=FAILURE method=Links.Application_Login()[pri:0, instance:c...)</span>
+                <span class="method-start">77849 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void com.org.home.Links.Test_Mens_Wear_Page())</span>
+                <span class="method-start">78353 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Test_Mens_Wear_Page</span>
+                <span class="method-start">78355 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">failureCatcher([TestResult name=Test_Mens_Wear_Page status=SUCCESS method=Links.Test_Mens_Wear_Page()[pri:1, instan...)</span>
+                <span class="method-start">85859 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void com.org.home.Links.Test_Womens_Wear_Page())</span>
+                <span class="method-start">85861 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Test_Womens_Wear_Page</span>
+                <span class="method-start">85862 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">failureCatcher([TestResult name=Test_Womens_Wear_Page status=SUCCESS method=Links.Test_Womens_Wear_Page()[pri:2, in...)</span>
+                <span class="method-start">92306 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void com.org.home.Links.Add_An_Item_To_Cart())</span>
+                <span class="method-start">92308 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Add_An_Item_To_Cart</span>
+                <span class="method-start">92309 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">failureCatcher([TestResult name=Add_An_Item_To_Cart status=SUCCESS method=Links.Add_An_Item_To_Cart()[pri:4, instan...)</span>
+                <span class="method-start">124224 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void com.org.home.Links.Save_For_Later_Option())</span>
+                <span class="method-start">124225 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Save_For_Later_Option</span>
+                <span class="method-start">124226 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">failureCatcher([TestResult name=Save_For_Later_Option status=SUCCESS method=Links.Save_For_Later_Option()[pri:5, in...)</span>
+                <span class="method-start">148320 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startTest(public void com.org.home.Links.Test_Kids_Wear_Page())</span>
+                <span class="method-start">148321 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Test_Kids_Wear_Page</span>
+                <span class="method-start">148322 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">failureCatcher([TestResult name=Test_Kids_Wear_Page status=SUCCESS method=Links.Test_Kids_Wear_Page()[pri:6, instan...)</span>
+                <span class="method-start">156950 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">156952 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

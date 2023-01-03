@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test suite Name" duration-ms="158050" started-at="2023-01-03T02:23:47 IST" finished-at="2023-01-03T02:26:25 IST">
+    <groups>
+    </groups>
+    <test name="com.org.home.Links" duration-ms="158050" started-at="2023-01-03T02:23:47 IST" finished-at="2023-01-03T02:26:25 IST">
+      <class name="com.org.home.Links">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.org.home.Links@5db99216]" name="launchBrowser" is-config="true" duration-ms="7238" started-at="2023-01-03T02:23:48 IST" finished-at="2023-01-03T02:23:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.org.home.Links@5db99216]" name="startTest" is-config="true" duration-ms="4" started-at="2023-01-03T02:23:55 IST" finished-at="2023-01-03T02:23:55 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.org.home.Links.Application_Login()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="FAIL" signature="Application_Login()[pri:0, instance:com.org.home.Links@5db99216]" name="Application_Login" duration-ms="70545" started-at="2023-01-03T02:23:55 IST" description="Log into the application" finished-at="2023-01-03T02:25:05 IST">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: (//span[@data-property='ACT_HEY_USER'])[1] (tried for 30 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//span[@data-property='ACT_HEY_USER'])[1] (tried for 30 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.org.CoreUtils.CommonUserActions.waitForVisibilityOfElement(CommonUserActions.java:557)
+at com.org.pages.Home.loginToApp(Home.java:46)
+at com.org.home.Links.Application_Login(Links.java:19)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@data-property='ACT_HEY_USER'])[1]"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SUNIL', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\sunil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57599}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e0addd8a4f7af94eeee171f0a2f373f1
+*** Element info: {Using=xpath, value=(//span[@data-property='ACT_HEY_USER'])[1]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.org.driver.BaseWebDriver.findElement(BaseWebDriver.java:72)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Application_Login -->
+        <test-method status="PASS" signature="failureCatcher(org.testng.ITestResult)[pri:0, instance:com.org.home.Links@5db99216]" name="failureCatcher" is-config="true" duration-ms="501" started-at="2023-01-03T02:25:05 IST" finished-at="2023-01-03T02:25:06 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Application_Login status=FAILURE method=Links.Application_Login()[pri:0, instance:com.org.home.Links@5db99216] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failureCatcher -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.org.home.Links@5db99216]" name="startTest" is-config="true" duration-ms="2" started-at="2023-01-03T02:25:06 IST" finished-at="2023-01-03T02:25:06 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.org.home.Links.Test_Mens_Wear_Page()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="Test_Mens_Wear_Page()[pri:1, instance:com.org.home.Links@5db99216]" name="Test_Mens_Wear_Page" duration-ms="7496" started-at="2023-01-03T02:25:06 IST" description="Verify Mens Wear Page Navigation" finished-at="2023-01-03T02:25:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Mens_Wear_Page -->
+        <test-method status="PASS" signature="failureCatcher(org.testng.ITestResult)[pri:0, instance:com.org.home.Links@5db99216]" name="failureCatcher" is-config="true" duration-ms="1" started-at="2023-01-03T02:25:13 IST" finished-at="2023-01-03T02:25:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test_Mens_Wear_Page status=SUCCESS method=Links.Test_Mens_Wear_Page()[pri:1, instance:com.org.home.Links@5db99216] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failureCatcher -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.org.home.Links@5db99216]" name="startTest" is-config="true" duration-ms="1" started-at="2023-01-03T02:25:13 IST" finished-at="2023-01-03T02:25:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.org.home.Links.Test_Womens_Wear_Page()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="Test_Womens_Wear_Page()[pri:2, instance:com.org.home.Links@5db99216]" name="Test_Womens_Wear_Page" duration-ms="6440" started-at="2023-01-03T02:25:13 IST" description="Verify Womens Wear Page Navigation" finished-at="2023-01-03T02:25:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Womens_Wear_Page -->
+        <test-method status="PASS" signature="failureCatcher(org.testng.ITestResult)[pri:0, instance:com.org.home.Links@5db99216]" name="failureCatcher" is-config="true" duration-ms="1" started-at="2023-01-03T02:25:20 IST" finished-at="2023-01-03T02:25:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test_Womens_Wear_Page status=SUCCESS method=Links.Test_Womens_Wear_Page()[pri:2, instance:com.org.home.Links@5db99216] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failureCatcher -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.org.home.Links@5db99216]" name="startTest" is-config="true" duration-ms="1" started-at="2023-01-03T02:25:20 IST" finished-at="2023-01-03T02:25:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.org.home.Links.Add_An_Item_To_Cart()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="Add_An_Item_To_Cart()[pri:4, instance:com.org.home.Links@5db99216]" name="Add_An_Item_To_Cart" duration-ms="31909" started-at="2023-01-03T02:25:20 IST" description="add an itesm to the cart" finished-at="2023-01-03T02:25:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Add_An_Item_To_Cart -->
+        <test-method status="PASS" signature="failureCatcher(org.testng.ITestResult)[pri:0, instance:com.org.home.Links@5db99216]" name="failureCatcher" is-config="true" duration-ms="0" started-at="2023-01-03T02:25:52 IST" finished-at="2023-01-03T02:25:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Add_An_Item_To_Cart status=SUCCESS method=Links.Add_An_Item_To_Cart()[pri:4, instance:com.org.home.Links@5db99216] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failureCatcher -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.org.home.Links@5db99216]" name="startTest" is-config="true" duration-ms="1" started-at="2023-01-03T02:25:52 IST" finished-at="2023-01-03T02:25:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.org.home.Links.Save_For_Later_Option()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="Save_For_Later_Option()[pri:5, instance:com.org.home.Links@5db99216]" name="Save_For_Later_Option" duration-ms="24090" started-at="2023-01-03T02:25:52 IST" description="Test “Save for Later” option " finished-at="2023-01-03T02:26:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Save_For_Later_Option -->
+        <test-method status="PASS" signature="failureCatcher(org.testng.ITestResult)[pri:0, instance:com.org.home.Links@5db99216]" name="failureCatcher" is-config="true" duration-ms="0" started-at="2023-01-03T02:26:16 IST" finished-at="2023-01-03T02:26:16 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Save_For_Later_Option status=SUCCESS method=Links.Save_For_Later_Option()[pri:5, instance:com.org.home.Links@5db99216] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failureCatcher -->
+        <test-method status="PASS" signature="startTest(java.lang.reflect.Method)[pri:0, instance:com.org.home.Links@5db99216]" name="startTest" is-config="true" duration-ms="1" started-at="2023-01-03T02:26:16 IST" finished-at="2023-01-03T02:26:16 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.org.home.Links.Test_Kids_Wear_Page()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="Test_Kids_Wear_Page()[pri:6, instance:com.org.home.Links@5db99216]" name="Test_Kids_Wear_Page" duration-ms="8622" started-at="2023-01-03T02:26:16 IST" description="Verify Kids Wear Page Navigation" finished-at="2023-01-03T02:26:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Kids_Wear_Page -->
+        <test-method status="PASS" signature="failureCatcher(org.testng.ITestResult)[pri:0, instance:com.org.home.Links@5db99216]" name="failureCatcher" is-config="true" duration-ms="1" started-at="2023-01-03T02:26:24 IST" finished-at="2023-01-03T02:26:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test_Kids_Wear_Page status=SUCCESS method=Links.Test_Kids_Wear_Page()[pri:6, instance:com.org.home.Links@5db99216] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failureCatcher -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.org.home.Links@5db99216]" name="closeBrowser" is-config="true" duration-ms="1032" started-at="2023-01-03T02:26:24 IST" finished-at="2023-01-03T02:26:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.org.home.Links -->
+    </test> <!-- com.org.home.Links -->
+  </suite> <!-- Test suite Name -->
+</testng-results>
